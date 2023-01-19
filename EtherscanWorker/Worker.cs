@@ -54,7 +54,7 @@ public class Worker : BackgroundService
                 }
             }
             _tokenService.CommitUpdate();
-            await Task.Delay(5000, stoppingToken);
+            await Task.Delay(300000, stoppingToken); // Milisecon here, currently set to 5 mins
         }
     }
 }
